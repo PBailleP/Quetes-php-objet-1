@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Objet.php';
+require_once 'Bicycle.php';
 $bike = new Bicycle("Black");
 var_dump($bike);
 
@@ -10,6 +10,7 @@ echo $bike->brake();
 echo '<br> Vitesse du vélo : ' . $bike->currentSpeed . ' km/h' . '<br>';
 echo $bike->brake();
 
+require_once 'SimpsonsCars.php';
 $car = new SimpsonsCars("blue", 4, "Electric");
 var_dump($car);
 
