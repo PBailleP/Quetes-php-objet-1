@@ -2,6 +2,7 @@
 
 require_once 'Bicycle.php';
 $bike = new Bicycle("Black");
+$bike->setCurrentSpeed(0);
 var_dump($bike);
 
 echo $bike->forward();
@@ -12,6 +13,7 @@ echo $bike->brake();
 
 require_once 'SimpsonsCars.php';
 $car = new SimpsonsCars("blue", 4, "Electric");
+$car->setCurrentSpeed(0);
 var_dump($car);
 
 echo $car->forward();
